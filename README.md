@@ -1,10 +1,10 @@
-# Key Updater Backend
+# Key Updater
 
-A Node.js/TypeScript backend service for managing and updating AI service keys across different use cases and model configurations.
+A full-stack application for managing and updating AI service keys across different use cases and model configurations. Built with a Node.js/TypeScript backend and React frontend.
 
 ## Overview
 
-The Key Updater Backend is designed to manage API keys for various AI services (OpenAI, Anthropic, Google) across different use cases like transcript processing, embeddings generation, chat responses, and more. It provides a centralized system for key rotation and priority management.
+The Key Updater is a monorepo containing both frontend and backend services designed to manage API keys for various AI services (OpenAI, Anthropic, Google) across different use cases like transcript processing, embeddings generation, chat responses, and more. It provides a centralized system for key rotation and priority management with a user-friendly web interface.
 
 ## Features
 
@@ -13,10 +13,28 @@ The Key Updater Backend is designed to manage API keys for various AI services (
 - **Priority-based Key Rotation**: Configurable priority system for key failover
 - **RESTful API**: Express.js-based API for key management operations
 - **MongoDB Integration**: Persistent storage for configuration and key data
+- **React Frontend**: Modern web interface for key management
 - **TypeScript Support**: Full TypeScript implementation for type safety
+
+## Monorepo Structure
+
+```
+key-updater/
+├── backend/                # Node.js/TypeScript API server
+│   ├── src/               # Source code
+│   ├── scripts/           # Utility scripts
+│   └── package.json       # Backend dependencies
+├── frontend/              # React/Vite web application
+│   ├── src/               # React components
+│   ├── public/            # Static assets
+│   └── package.json       # Frontend dependencies
+├── README.md              # This file
+└── .gitignore            # Git ignore rules
+```
 
 ## Tech Stack
 
+### Backend
 - **Runtime**: Node.js
 - **Language**: TypeScript
 - **Framework**: Express.js
@@ -24,56 +42,112 @@ The Key Updater Backend is designed to manage API keys for various AI services (
 - **Development**: ts-node-dev for hot reloading
 - **Testing**: Jest
 
+### Frontend
+- **Framework**: React 19
+- **Build Tool**: Vite
+- **UI Library**: Material-UI (MUI)
+- **HTTP Client**: Axios
+- **Language**: TypeScript
+
 ## Prerequisites
 
 - Node.js (v16 or higher)
 - MongoDB instance
 - npm or yarn package manager
 
-## Installation
+## Quick Start
 
-1. Clone the repository:
+### 1. Clone and Install Dependencies
+
 ```bash
 git clone <repository-url>
 cd key-updater
-```
 
-2. Install dependencies:
-```bash
+# Install backend dependencies
 cd backend
 npm install
+
+# Install frontend dependencies
+cd ../frontend
+npm install
+cd ..
 ```
 
-3. Set up environment variables:
+### 2. Environment Setup
+
+Set up backend environment variables:
 ```bash
+cd backend
 cp .env.example .env
 ```
-Edit `.env` with your configuration:
+Edit `backend/.env` with your configuration:
 ```env
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/key-updater
 NODE_ENV=development
 ```
 
-## Usage
+### 3. Start the Application
 
-### Development Mode
+#### Option A: Run Both Services (Recommended for Development)
+
+**Terminal 1 - Backend:**
 ```bash
+cd backend
 npm run dev
 ```
-Starts the server with hot reloading using ts-node-dev.
+This starts the API server on `http://localhost:3000`
 
-### Production Build
+**Terminal 2 - Frontend:**
 ```bash
+cd frontend
+npm run dev
+```
+This starts the React app on `http://localhost:5173`
+
+#### Option B: Production Build
+
+**Backend:**
+```bash
+cd backend
 npm run build
 npm start
 ```
 
-### Import Use Cases
+**Frontend:**
 ```bash
+cd frontend
+npm run build
+npm run preview
+```
+
+### 4. Initialize Data (First Time Only)
+
+Import the use case configurations:
+```bash
+cd backend
 npm run set-usecases
 ```
-Imports the use case configurations from `scripts/files/use-cases.json`.
+
+## Development Workflow
+
+### Backend Development
+```bash
+cd backend
+npm run dev          # Start with hot reload
+npm run build        # Build TypeScript
+npm test             # Run tests
+npm run set-usecases # Import use cases
+```
+
+### Frontend Development
+```bash
+cd frontend
+npm run dev      # Start dev server with HMR
+npm run build    # Build for production
+npm run preview  # Preview production build
+npm run lint     # Run ESLint
+```
 
 ## API Endpoints
 
@@ -123,23 +197,39 @@ Use cases are defined in `backend/scripts/files/use-cases.json` with the followi
 - **Google**: text-embedding-005
 - **Azure OpenAI**: Azure-hosted OpenAI models
 
-## Project Structure
+## Detailed Project Structure
 
 ```
-backend/
-├── src/
-│   ├── app.ts              # Main application file
-│   ├── routes/             # API route handlers
-│   ├── models/             # MongoDB models
-│   ├── controllers/        # Business logic
-│   └── middleware/         # Custom middleware
-├── scripts/
-│   ├── files/
-│   │   └── use-cases.json  # Use case configurations
-│   └── importUseCases.ts   # Use case import script
-├── dist/                   # Compiled JavaScript (generated)
-├── package.json
-└── tsconfig.json
+key-updater/
+├── backend/                    # API Server
+│   ├── src/
+│   │   ├── app.ts             # Main application file
+│   │   ├── routes/            # API route handlers
+│   │   ├── models/            # MongoDB models
+│   │   ├── controllers/       # Business logic
+│   │   └── middleware/        # Custom middleware
+│   ├── scripts/
+│   │   ├── files/
+│   │   │   └── use-cases.json # Use case configurations
+│   │   └── importUseCases.ts  # Use case import script
+│   ├── dist/                  # Compiled JavaScript (generated)
+│   ├── package.json
+│   └── tsconfig.json
+├── frontend/                   # React Web App
+│   ├── src/
+│   │   ├── components/        # React components
+│   │   ├── pages/             # Page components
+│   │   ├── services/          # API service calls
+│   │   ├── types/             # TypeScript type definitions
+│   │   ├── App.tsx            # Main App component
+│   │   └── main.tsx           # React entry point
+│   ├── public/                # Static assets
+│   ├── dist/                  # Build output (generated)
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── vite.config.ts
+├── README.md                   # This file
+└── .gitignore                 # Git ignore rules
 ```
 
 ## Development
