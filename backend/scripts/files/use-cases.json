@@ -1,0 +1,517 @@
+[
+  {
+    "use_case_name": "genai_recommendations",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 2
+      },
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 3
+      }
+    ]
+  },
+  {
+    "use_case_name": "chat_citation",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "text-embedding-ada-002",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "text-embedding-ada-002",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "chat_answer_generation",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_0f7f_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "embedding_generation",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "text-embedding-ada-002",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "text-embedding-ada-002",
+        "key_priority": 2
+      },
+      {
+        "key_name": "key_0f7f_azure",
+        "model_name": "text-embedding-ada-002",
+        "key_priority": 3
+      }
+    ]
+  },
+  {
+    "use_case_name": "128k_4o_transcripts_processing",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_0f7f_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 2
+      },
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 3
+      }
+    ]
+  },
+  {
+    "use_case_name": "genai_prompts_as_1",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4-32k",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "transcript_summaries_general_reports",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 2
+      },
+      {
+        "key_name": "key_0f7f_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 3
+      }
+    ]
+  },
+  {
+    "use_case_name": "genai_prompts_as_2",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4-32k",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "128k_4_turbo_20240409_transcripts_processing",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_openai",
+        "model_name": "gpt-4-turbo-2024-04-09",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "genai_transcript_processing",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 2
+      },
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 3
+      }
+    ]
+  },
+  {
+    "use_case_name": "genai_search",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "transcript_summaries_specific_reports",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4-32k",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4-32k",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "transcript_summaries_citations",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "text-embedding-ada-002",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "text-embedding-ada-002",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "chat_response",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_0f7f_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "chat_topic_generation",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_0f7f_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "128k_4turbo_transcripts_processing",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4-turbo",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_0f7f_azure",
+        "model_name": "gpt-4-turbo",
+        "key_priority": 2
+      },
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4-turbo",
+        "key_priority": 3
+      }
+    ]
+  },
+  {
+    "use_case_name": "summary_worker_clients",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4-32k",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "summary_worker_embedding_clients",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "summary_master_embeddings",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "text-embedding-ada-002",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "qc_tool_vision",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_anthropic",
+        "model_name": "claude-3-5-sonnet-20241022",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "summary_recommendations",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_b9fd_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 2
+      },
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-4o",
+        "key_priority": 3
+      }
+    ]
+  },
+  {
+    "use_case_name": "pre_ddp_recommendations",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "vault_synthesis",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_anthropic",
+        "model_name": "claude-3-5-sonnet-20241022",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "search_ingestion",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_anthropic",
+        "model_name": "claude-3-5-sonnet-20241022",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "new_recommendations",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "user_query_response",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_azure",
+        "model_name": "gpt-35-turbo",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_0f7f_azure",
+        "model_name": "gpt-35-turbo",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "mind_investor_agents",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_0f7f_anthropic",
+        "model_name": "claude-3-5-sonnet-20241022",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "query_company_name",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "o3-mini",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "portal_sanitization_helper",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_anthropic",
+        "model_name": "claude-3-5-sonnet-20241022",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "value_creation_memo",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_anthropic",
+        "model_name": "claude-3-5-sonnet-20241022",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "value_creation_memo_openai",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-o3-mini",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "company_zoom_info_search_payload",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4.1",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "pepi_portal_cron",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "pre_ddp_llm_openai",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-o3",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "pre_ddp_llm_claude",
+    "openai_keys": [
+      {
+        "key_name": "key_0f7f_anthropic",
+        "model_name": "claude-3-5-sonnet-20241022",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "embedding_generation_gemini",
+    "openai_keys": [
+      {
+        "key_name": "key_d58a_google",
+        "model_name": "text-embedding-005",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "taxonomy",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4o",
+        "key_priority": 1
+      }
+    ]
+  },
+  {
+    "use_case_name": "test_prompts",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "test-model",
+        "key_priority": 1
+      },
+      {
+        "key_name": "key_0f7f_openai",
+        "model_name": "test-model",
+        "key_priority": 2
+      }
+    ]
+  },
+  {
+    "use_case_name": "gpt4.1_transcript_processing",
+    "openai_keys": [
+      {
+        "key_name": "key_b9fd_openai",
+        "model_name": "gpt-4.1",
+        "key_priority": 1
+      }
+    ]
+  }
+]
